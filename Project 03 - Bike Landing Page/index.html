@@ -1,0 +1,668 @@
+<!-- creating a Bike landing page of with the help of HTML and Tailwind only -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike landing page</title>
+    <!-- font-awesome link -->
+    <script
+      src="https://kit.fontawesome.com/a4ceb3bfd3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- linking my CSS file -->
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+
+  <body class="font-Poppins">
+    <header>
+      <!-- container starts -->
+      <div class="container mx-auto">
+        <!-- navbar starts -->
+        <nav class="py-5 flex justify-between items-center">
+          <div class="logo">
+            <img src="./assets/logo.png" alt="logo" />
+          </div>
+          <ul class="flex gap-x-10">
+            <li>
+              <select
+                name="product"
+                id="product"
+                class="flex items-center justify-center uppercase"
+              >
+                <option value="products" class="uppercase">Products</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="mustang">Mustang</option>
+              </select>
+            </li>
+            <li class="uppercase">Gallery</li>
+            <li class="uppercase">contact</li>
+          </ul>
+          <div class="buttons flex gap-6">
+            <button class="bg-white py-2 px-3 uppercase rounded-sm shadow-sm">
+              login
+            </button>
+            <button
+              class="uppercase bg-[#42454a] text-white py-2 px-3 rounded-sm shadow-lg"
+            >
+              signup
+            </button>
+          </div>
+        </nav>
+        <!-- navbar starts -->
+      </div>
+      <hr />
+      <!-- container ends -->
+
+      <!-- container starts -->
+      <div class="container mx-auto">
+        <!-- hero-section starts -->
+        <div class="hero-section flex">
+          <!-- text starts -->
+          <div class="text w-[40%] flex flex-col justify-center">
+            <h1>
+              <span class="text-6xl uppercase text-[#42454a] font-light"
+                >let's ride</span
+              >
+              <br />
+              <span class="text-6xl uppercase font-bold text-[#42454a]"
+                >the future</span
+              >
+            </h1>
+            <div class="line w-[50%] h-1 bg-[#42454a] mt-[10%]"></div>
+            <p class="text-[#4b4c4d] my-[8%]">
+              simple and sleek designs with user in mind.
+            </p>
+
+            <div class="buttons flex gap-8 items-center">
+              <div class="bnt-1">
+                <button class="flex items-center gap-3">
+                  <span>
+                    <i
+                      class="fa-solid fa-arrow-right bg-[#42454a] p-5 text-white"
+                    ></i>
+                  </span>
+                  <span class="font-bold">Buy now</span>
+                </button>
+              </div>
+              <div class="btn-2">
+                <button class="flex gap-5 items-center">
+                  <span class="text-[#42454a] font-semibold text-left">
+                    Watch our <br />
+                    video how <br />it works
+                  </span>
+                  <span>
+                    <img
+                      src="./assets/header play button.png"
+                      alt="h-play-button"
+                      class="w-[80%]"
+                    />
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- text end -->
+
+          <!-- image starts -->
+          <div class="image w-[60%]">
+            <img src="./assets/header image.png" alt="header-img" />
+          </div>
+          <!-- image end -->
+        </div>
+        <!-- hero-section end -->
+      </div>
+      <!-- container ends -->
+    </header>
+
+    <main>
+      <!-- one number badge starts -->
+      <div class="container mx-auto badge flex justify-end py-3 items-center">
+        <img src="./assets/01.png" alt="one-img" />
+        <button class="ml-10 py-1 px-3 border border-black h-10 rounded-l-3xl">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button
+          class="rounded-r-3xl py-1 px-3 border border-black h-10 border-l-0"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <!-- one number badge end -->
+
+      <!-- features starts -->
+      <div class="container mx-auto features py-10 flex justify-between">
+        <div
+          class="feature shadow-xl rounded-sm p-5 flex flex-col justify-center items-center w-[14%]"
+        >
+          <div class="figure text-2xl">
+            <span class="font-bold">105</span>
+            <span class="font-semibold text-base">lbs</span>
+          </div>
+          <div class="descp text-sm text-[#4b4c4d]">Net Weight</div>
+        </div>
+        <div
+          class="feature shadow-xl rounded-sm p-5 flex flex-col justify-center items-center w-[14%]"
+        >
+          <div class="figure text-2xl">
+            <span class="font-bold">26</span>
+            <span class="font-semibold text-base">mph</span>
+          </div>
+          <div class="descp text-sm text-[#4b4c4d]">Top Speed</div>
+        </div>
+        <div
+          class="feature shadow-xl rounded-sm p-5 flex flex-col justify-center items-center w-[14%]"
+        >
+          <div class="figure text-2xl">
+            <span class="font-bold">38</span>
+            <span class="font-semibold text-base">miles</span>
+          </div>
+          <div class="descp text-sm text-[#4b4c4d]">Max Range</div>
+        </div>
+        <div
+          class="feature shadow-xl rounded-sm p-5 flex flex-col justify-center items-center w-[14%]"
+        >
+          <div class="figure text-2xl">
+            <span class="font-bold">89</span>
+            <span class="font-semibold text-base">nm</span>
+          </div>
+          <div class="descp text-sm text-[#4b4c4d]">Max Torques</div>
+        </div>
+        <div
+          class="feature shadow-xl rounded-sm p-5 flex flex-col justify-center items-center w-[14%]"
+        >
+          <div class="figure text-2xl">
+            <span class="font-bold">22%</span>
+            <span class="font-semibold text-base">slope</span>
+          </div>
+          <div class="descp text-sm text-[#4b4c4d]">hill Climbing</div>
+        </div>
+        <div
+          class="feature shadow-xl rounded-sm p-5 flex flex-col justify-center items-center w-[14%]"
+        >
+          <div class="figure text-2xl">
+            <span class="font-bold">2x</span>
+            <span class="font-semibold text-base"></span>
+          </div>
+          <div class="descp text-sm text-[#4b4c4d] text-center">
+            Hydralic disc Brakes
+          </div>
+        </div>
+      </div>
+      <!-- features ends -->
+
+      <!-- product-information starts -->
+      <div class="product-information my-[5%]">
+        <div class="top flex flex-col justify-center items-center">
+          <h2 class="text-4xl font-bold text-[#42454a]">Product Information</h2>
+          <p class="py-7 text-[#42454a]">
+            Our scooter has following unique design and technology features.
+          </p>
+        </div>
+        <div class="bottom flex">
+          <div class="image w-[60%]">
+            <img
+              src="./assets/product information image.png"
+              alt="product-img"
+            />
+          </div>
+          <div class="feature-list w-[40%] pt-[11%] pl-[3%]">
+            <ul class="flex flex-col gap-8 text-[#42454a]">
+              <li class="flex items-center gap-4">
+                <span>
+                  <img src="./assets/Icon.png" alt="icon" />
+                </span>
+                <span> Lightweight aircraft grade aluminium frame </span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span>
+                  <img src="./assets/Icon.png" alt="icon" />
+                </span>
+                <span> Car grade lithium battery </span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span>
+                  <img src="./assets/Icon.png" alt="icon" />
+                </span>
+                <span> self balanced </span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span>
+                  <img src="./assets/Icon.png" alt="icon" />
+                </span>
+                <span> Plug n play </span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span>
+                  <img src="./assets/Icon.png" alt="icon" />
+                </span>
+                <span> Quick release adapter </span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span>
+                  <img src="./assets/Icon.png" alt="icon" />
+                </span>
+                <span> RFID key card </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- product-information ends -->
+
+      <!-- battery-performance starts -->
+      <div class="container mx-auto battery-performance">
+        <img src="./assets/high efficiency motor.png" alt="motor-img" />
+      </div>
+      <!-- battery-performance ends -->
+
+      <!-- accessories starts -->
+      <div class="container mx-auto accessories">
+        <!-- title starts -->
+        <div class="top flex flex-col justify-center items-center">
+          <h2 class="text-4xl font-bold text-[#42454a]">
+            Multiple Accessories
+          </h2>
+          <p class="py-7 text-[#42454a]">
+            There are multiple modes for the scooter for your multiple needs.
+          </p>
+        </div>
+        <!-- title ends -->
+
+        <!-- accessories-list starts -->
+        <div class="accessories-list flex flex-col">
+          <div class="accessories-1 flex mt-5">
+            <div class="feature-list w-[30%] pt-[2%]">
+              <h2 class="text-[#42454a] text-3xl font-bold mb-8">
+                Golf Bag Rock
+              </h2>
+              <ul class="flex flex-col gap-8 text-[#42454a]">
+                <li class="flex items-center gap-4">
+                  <span>
+                    <img src="./assets/Icon.png" alt="icon" />
+                  </span>
+                  <span>Material : Aluminium alloy</span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <span>
+                    <img src="./assets/Icon.png" alt="icon" />
+                  </span>
+                  <span>color : Black </span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <span>
+                    <img src="./assets/Icon.png" alt="icon" />
+                  </span>
+                  <span> Capacity : 45lbs </span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <span>
+                    <img src="./assets/Icon.png" alt="icon" />
+                  </span>
+                  <span> Ease : Stedy & adjustable </span>
+                </li>
+              </ul>
+            </div>
+            <div class="image w-[70%]">
+              <img src="./assets/golf bag rock.png" alt="golf-rock" />
+            </div>
+          </div>
+          <div class="accessories-1 flex mt-5">
+            <div class="image w-[70%]">
+              <img src="./assets/shopping rack.png" alt="shopping-rack" />
+            </div>
+            <div class="feature-list w-[30%] pt-[2%] ml-[3%]">
+              <h2 class="text-[#42454a] text-3xl font-bold mb-8">
+                Shopping Rack
+              </h2>
+              <ul class="flex flex-col gap-8 text-[#42454a]">
+                <li class="flex items-center gap-4">
+                  <span>
+                    <img src="./assets/Icon.png" alt="icon" />
+                  </span>
+                  <span>Material : Aluminium alloy</span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <span>
+                    <img src="./assets/Icon.png" alt="icon" />
+                  </span>
+                  <span>color : Black </span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <span>
+                    <img src="./assets/Icon.png" alt="icon" />
+                  </span>
+                  <span> Capacity : 45lbs </span>
+                </li>
+                <li class="flex items-center gap-4">
+                  <span>
+                    <img src="./assets/Icon.png" alt="icon" />
+                  </span>
+                  <span> Ease : Stedy & adjustable </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button
+            class="capitalize mx-auto py-3 px-4 border-2 border-[#42454a] rounded-md my-10 font-semibold text-[#42454a]"
+          >
+            More accessories coming soon
+          </button>
+        </div>
+        <!-- accessories-list ends -->
+      </div>
+      <!-- accessories ends -->
+
+      <!-- gallery starts -->
+      <div class="container mx-auto gallery my-[5%]">
+        <!-- title starts -->
+        <div class="top flex flex-col justify-center items-center">
+          <h2 class="text-4xl font-bold text-[#42454a]">Gallery</h2>
+          <p class="py-7 text-[#42454a]">
+            View gallery of our products and make yourself satisfied with our
+            creation.
+          </p>
+        </div>
+        <!-- title ends -->
+
+        <!-- images-collection starts -->
+        <div class="img-collection flex justify-between mt-[5%]">
+          <div class="left w-[45%] mt-[15%] relative">
+            <img src="./assets/gallery scooter.png" alt="gallery-scooter" />
+            <span class="text-xl font-bold text-[#42454a] top-5 left-5 absolute"
+              >Scooter</span
+            >
+            <div class="btns flex my-5 flex-col gap-5">
+              <button
+                class="text-[#42454a] py-4 px-6 border-2 font-semibold border-[#42454a] w-[80%] text-xl rounded-md"
+              >
+                Battery Images
+              </button>
+              <button
+                class="text-[#42454a] py-4 px-6 border-2 border-[#42454a] w-[80%] text-xl font-semibold rounded-md"
+              >
+                Spare Parts Images
+              </button>
+              <button
+                class="text-[#42454a] w-[80%] text-xl py-4 px-6 border-2 border-[#42454a] font-semibold rounded-md"
+              >
+                charging Cable Images
+              </button>
+            </div>
+          </div>
+          <div class="right w-[45%] relative">
+            <img
+              src="./assets/gallery built quality.png"
+              alt="built-quality-img"
+              class="mb-5"
+            />
+            <span class="text-xl font-bold text-[#42454a] top-5 left-5 absolute"
+              >Built Quality</span
+            >
+            <img src="./assets/gallery parts.png" alt="parts-img" />
+            <span
+              class="text-xl font-bold text-[#42454a] top-[55%] left-5 absolute"
+              >Parts</span
+            >
+          </div>
+        </div>
+        <!-- images-collection ends -->
+      </div>
+      <!-- gallery ends -->
+
+      <!-- product-color-box starts -->
+      <div class="product-color-box">
+        <!-- title starts -->
+        <div class="top flex flex-col justify-center items-center">
+          <h2 class="text-4xl font-bold text-[#42454a]">Colors</h2>
+          <p class="py-7 text-[#42454a]">checkout our products colors.</p>
+        </div>
+        <!-- title ends -->
+
+        <!-- color-box starts -->
+        <div class="color-box relative">
+          <img
+            src="./assets/gallery scooter.png"
+            alt="scooter"
+            class="w-full"
+          />
+          <div class="colors absolute flex justify-around -bottom-[13%]">
+            <img
+              src="./assets/color-scooter-1.png"
+              alt="color-scooter"
+              class="w-[20%]"
+            />
+            <span
+              class="text-6xl top-[60%] left-[14%] absolute text-white font-bold opacity-70"
+              >01</span
+            >
+            <img
+              src="./assets/color-scooter-2.png"
+              alt="color-scooter"
+              class="w-[20%]"
+            />
+            <span
+              class="text-6xl top-[60%] left-[38%] absolute text-white font-bold opacity-70"
+              >02</span
+            >
+            <img
+              src="./assets/color-scooter-3.png"
+              alt="color-scooter"
+              class="w-[20%]"
+            />
+            <span
+              class="text-6xl top-[60%] left-[63%] absolute text-white font-bold opacity-70"
+              >03</span
+            >
+            <img
+              src="./assets/color-scooter-4.png"
+              alt="color-scooter"
+              class="w-[20%]"
+            />
+            <span
+              class="text-6xl top-[60%] left-[88.5%] absolute text-white font-bold opacity-70"
+              >04</span
+            >
+          </div>
+        </div>
+        <!-- color-box ends -->
+      </div>
+      <!-- product-color-box ends -->
+
+      <!-- testimonials starts -->
+      <div class="testimonials mt-[10%] bg-[#f4f4f4] pb-[3%]">
+        <!-- title starts -->
+        <div class="top flex flex-col justify-center items-center pt-10">
+          <h2 class="text-4xl font-bold text-[#42454a]">Testimonials</h2>
+        </div>
+        <!-- title ends -->
+
+        <!-- testimonials-list starts -->
+        <div class="testimonials-list flex justify-around my-[4%]">
+          <div
+            class="testimonial w-[25%] flex flex-col shadow-2xl bg-white p-5 justify-center items-center"
+          >
+            <div class="rating flex py-5">
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+            </div>
+            <div class="review text-center text-[#42454a]">
+              on the other hand, we deounce with righteous indignation and
+              dislike men who are so beguiled and demoralized by the charms of
+              pleasure.
+            </div>
+            <div class="identity flex items-center py-5 gap-3">
+              <img src="./assets/serhiy hipskyy.png" alt="user" />
+              <span class="flex flex-col text-[#42454a]">
+                <span class="font-semibold">serhiy hipskyy</span>
+                <span>CEO Universal</span>
+              </span>
+            </div>
+          </div>
+          <div
+            class="testimonial w-[25%] p-5 justify-center items-center flex flex-col border border-[#9d9e9e]"
+          >
+            <div class="rating flex py-5">
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+            </div>
+            <div class="review text-center text-[#42454a]">
+              on the other hand, we deounce with righteous indignation and
+              dislike men who are so beguiled and demoralized by the charms of
+              pleasure.
+            </div>
+            <div class="identity flex items-center py-5 gap-3">
+              <img src="./assets/Justus Menke.png" alt="user" />
+              <span class="flex flex-col text-[#42454a]">
+                <span class="font-semibold">Justus Menke</span>
+                <span>CEO Universal</span>
+              </span>
+            </div>
+          </div>
+          <div
+            class="testimonial w-[25%] flex flex-col border border-[#9d9e9e] p-5 justify-center items-center"
+          >
+            <div class="rating flex py-5">
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+              <i class="fa-solid fa-star text-orange-400"></i>
+            </div>
+            <div class="review text-center text-[#42454a]">
+              on the other hand, we deounce with righteous indignation and
+              dislike men who are so beguiled and demoralized by the charms of
+              pleasure.
+            </div>
+            <div class="identity py-5 gap-3 flex items-center">
+              <img src="./assets/Britain Eriksen.png" alt="user" />
+              <span class="flex flex-col text-[#42454a]">
+                <span class="font-semibold">Britain Eriksen</span>
+                <span>CEO Universal</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- testimonials-list ends -->
+
+        <!-- sliders starts -->
+        <div class="sliders flex justify-center gap-3">
+          <button class="border border-[#42454a] rounded-full py-2 px-3">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button
+            class="border border-[#42454a] rounded-full py-2 px-3 bg-[#42454a] text-white"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <!-- sliders ends -->
+      </div>
+      <!-- testimonials end -->
+
+      <!-- news-letter starts -->
+      <div class="news-letter container mx-auto py-[5%]">
+        <!-- title starts -->
+        <div class="top flex flex-col justify-center items-center">
+          <h2 class="text-4xl font-bold text-[#42454a] capitalize">
+            subscribe to newsletter
+          </h2>
+          <p class="py-5 text-[#42454a]">
+            Subscribe to our newsletter to get amazing offers in future.
+          </p>
+        </div>
+        <!-- title ends -->
+
+        <!-- input-area starts -->
+        <div class="wrapper flex justify-center my-10 gap-5">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email."
+            class="bg-[#f4f4f4] py-4 px-7 rounded-md"
+          />
+          <button class="bg-[#42454a] text-white rounded-md py-2 px-4">
+            Get start
+          </button>
+        </div>
+        <!-- input-area ends -->
+      </div>
+      <!-- news-letter ends -->
+    </main>
+
+    <footer class="bg-[#42454a] text-white">
+      <div class="upper flex">
+        <div class="left w-[50%] relative">
+          <img
+            src="./assets/footer scooter.png"
+            alt="scooter-img"
+            class="absolute bottom-1"
+          />
+        </div>
+        <div class="right w-[50%] py-[5%] flex justify-evenly">
+          <div class="links">
+            <h3 class="font-semibold text-xl">About</h3>
+            <ul class="flex flex-col gap-3 text-[#cccbcb] mt-5">
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Teams</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <h3 class="font-semibold text-xl">Resources</h3>
+            <ul class="flex flex-col mt-5 gap-3 text-[#cccbcb]">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Application</a></li>
+              <li><a href="#">FAQ features</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <h3 class="font-semibold text-xl">Legals</h3>
+            <ul class="flex flex-col gap-3 text-[#cccbcb] mt-5">
+              <li><a href="#">Copyright Privacy</a></li>
+              <li><a href="#">Policy Disclamier</a></li>
+              <li><a href="#">Terms</a></li>
+              <li class="flex gap-3">
+                <i
+                  class="fa-brands fa-facebook-f p-2 bg-[#bbcbcb] rounded-full text-[#42454a] px-3"
+                ></i>
+                <i
+                  class="fa-brands fa-twitter p-2 bg-[#bbcbcb] rounded-full text-[#42454a]"
+                ></i>
+                <i
+                  class="fa-brands fa-instagram p-2 bg-[#bbcbcb] rounded-full text-[#42454a]"
+                ></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright bg-[#42454a] py-3 text-center">
+        <span class="text-[#cccbcb]"
+          >&copy; Copyright 2023. All rights reserved.</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
