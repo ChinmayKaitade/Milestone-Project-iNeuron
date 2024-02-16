@@ -1,0 +1,90 @@
+/* This css files handles stylings of mobile devices  */
+@media only screen and (max-width: 576px) {
+  /* navbar responsive design */
+  .burger-menu {
+    display: block;
+  }
+
+  .profile-img {
+    display: block;
+  }
+
+  .logo img {
+    width: 20%;
+  }
+
+  .links {
+    display: none;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  /* hero-section design */
+  .hero-section {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-right: 0;
+    justify-content: left;
+    align-items: start;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    min-height: 50vh;
+  }
+
+  .image img {
+    object-fit: contain;
+    width: auto;
+  }
+
+  .image .background,
+  .image .pattern {
+    width: 100%;
+  }
+
+  .boy {
+    top: 6vh;
+    left: 15vw;
+  }
+
+  .buttons {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 0 auto;
+  }
+
+  .buttons img {
+    position: relative;
+    left: 60vw;
+  }
+
+  /* footer responsive design */
+  .services {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services .box {
+    width: 70%;
+    margin: 7% auto;
+  }
+}

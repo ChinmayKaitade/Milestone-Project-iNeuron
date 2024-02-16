@@ -1,0 +1,235 @@
+/* This css files handles stylings of big screen devices */
+/* global settings */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --orange: #ff5202;
+  --lightGrey: #a6a2a2;
+  --normalGrey: #b8b7b7;
+  --darkBlue: #262543;
+}
+
+.main-container {
+  width: 85%;
+  margin: auto;
+  height: 100%;
+}
+
+/* header section design */
+header {
+  height: 14vh;
+}
+
+/* navbar section design */
+.burger-menu {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+  align-items: center;
+  font-weight: 500;
+}
+
+/* ------ */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.profile-img {
+  display: none;
+}
+
+/* ------ */
+.links {
+  display: flex;
+  gap: 30px;
+}
+
+.links .item {
+  list-style: none;
+}
+
+.links .item a {
+  text-decoration: none;
+  color: var(--lightGrey);
+}
+
+.links .item a:hover {
+  color: var(--orange);
+}
+
+/* ------ */
+nav button {
+  padding: 1% 2%;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+/* hero-section design */
+.hero-section {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 70% 30%;
+}
+
+/* ----- */
+.content {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-right: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.content p {
+  color: #302f2f;
+  border-left: 1px solid #000;
+  padding-left: 10px;
+  margin: 20px 0;
+}
+
+/* ----- */
+.buttons {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  position: relative;
+}
+
+.buttons .get-start {
+  border: none;
+  background-color: var(--orange);
+  padding: 1rem 2rem;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.buttons img {
+  position: absolute;
+  bottom: 0;
+  right: 15vw;
+  width: 20%;
+}
+
+.buttons .learn-more {
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 1rem 2rem;
+}
+
+/* ----- */
+.image {
+  margin: 8% 0;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  position: relative;
+  min-height: 75vh;
+}
+
+.image img {
+  position: absolute;
+}
+
+.pattern {
+  z-index: 2;
+}
+
+.boy {
+  top: 10vh;
+  left: 7vw;
+  width: 60%;
+}
+
+.green-arrow {
+  bottom: 0;
+  left: 5vw;
+}
+
+.circle {
+  bottom: 6vh;
+  right: 0;
+}
+
+/* footer section design */
+footer {
+  background-color: var(--darkBlue);
+  color: #fff;
+}
+
+.services {
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .box {
+  flex: 0.2;
+}
+
+.speciality h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.speciality p {
+  margin-top: 5%;
+  color: var(--normalGrey);
+}
+
+.service img {
+  background-color: palegreen;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.service:nth-child(2) img {
+  background-color: #1cd7af;
+}
+
+.service:nth-child(3) img {
+  background-color: #fc5b11;
+}
+
+.service:nth-child(4) img {
+  background-color: #525bf1;
+}
+
+.service h3 {
+  margin: 4% 0;
+  text-transform: uppercase;
+}
+
+.service p {
+  color: var(--normalGrey);
+}
