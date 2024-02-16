@@ -1,0 +1,506 @@
+/* importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,600&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* global settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  padding: 0 15%;
+}
+
+:root {
+  --blue: #23a6f0;
+  --lightBlue: #8ec2f2;
+  --black: #252b42;
+  --green: #2dc071;
+}
+
+/* header design */
+header {
+  background: url("assets/background.png") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  /* test on it after comp.*/
+}
+
+/* --> navbar design */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0;
+  height: 12vh;
+}
+
+nav .brand {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+nav .brand span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav .brand ul {
+  display: flex;
+  gap: 6%;
+}
+
+nav .brand ul li {
+  list-style: none;
+}
+
+nav .brand ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav button {
+  background-color: var(--blue);
+  color: #fff;
+  border: none;
+  padding: 2% 3%;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* hero-section design */
+.hero-section {
+  display: flex;
+  padding-top: 7%;
+  height: 88vh;
+}
+
+/* --> content design */
+.content {
+  flex: 0.7;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8%;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.content p {
+  margin: 5% 0;
+  color: #d8d7d7;
+}
+
+.content .buttons button {
+  font-weight: 500;
+  margin-right: 2%;
+  padding: 2.3% 3%;
+  width: 12vw;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.content .buttons .get-quote {
+  background-color: var(--blue);
+}
+
+.content .buttons .learn-more {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+/* --> form design */
+.form {
+  flex: 0.3;
+  background-color: #fff;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.form h3 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+  margin-top: 2%;
+}
+
+form label {
+  font-weight: 500;
+  margin: 2% 0;
+}
+
+form input,
+select {
+  padding: 4%;
+  color: #5c5c5c;
+  border-radius: 6px;
+  border: none;
+  margin: 2% 0;
+  background-color: #f0f0f0;
+}
+
+.btn {
+  background-color: var(--blue);
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  padding: 4% 3%;
+  margin-top: 2%;
+}
+
+/* main design */
+/* services design */
+.services {
+  margin: 10% auto;
+}
+
+/* --> title design */
+.title {
+  text-align: center;
+}
+
+.title h2 {
+  margin: 2% 0;
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+
+.title p {
+  color: #5c5c5c;
+}
+
+/* --> card design */
+.cards {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid var(--lightBlue);
+  width: 30%;
+  border-radius: 9px;
+}
+
+.card .head {
+  display: flex;
+  background-color: var(--lightBlue);
+  color: #fff;
+  padding: 6% 0;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  font-weight: 500;
+}
+
+.card .head .fa-users {
+  background-color: #fff;
+  color: var(--lightBlue);
+  padding: 6%;
+  border-radius: 100%;
+}
+
+.card .data {
+  padding: 10%;
+}
+
+.card .data ul li {
+  list-style: "- ";
+  margin: 4% 0;
+  color: #5c5c5c;
+  font-size: 14px;
+}
+
+.card .data a {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+/* --> reviews design */
+.reviews {
+  background-color: #f5f5f5;
+  padding: 6% 15%;
+}
+
+.review-list {
+  margin: 7% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-list .review {
+  background-color: #fff;
+  width: 30%;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.review-list .review .rating i {
+  color: #ffd700;
+}
+
+.review-list .review p {
+  color: #797777;
+  margin: 10% 0;
+}
+
+/* faq design */
+.faq-list {
+  padding: 5% 15%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.faq-list .faq {
+  width: 30%;
+  display: flex;
+  gap: 7%;
+  margin-bottom: 7%;
+}
+
+.faq-list .faq i {
+  color: var(--blue);
+}
+
+.faq-list .faq h4 {
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.faq-list .faq p {
+  margin: 6% 0;
+  color: #797777;
+}
+
+/* pricing design */
+.pricing {
+  background-color: #f5f5f5;
+  padding: 5% 15%;
+}
+
+.price-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  width: 32%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid var(--blue);
+  margin-top: 15%;
+}
+
+.price .free {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding: 10% 0;
+  font-size: 1.3rem;
+}
+
+.price .text {
+  color: #5c5c5c;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+.price .amt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0 10% 0;
+  gap: 5%;
+  color: var(--blue);
+}
+
+.price .amt .fig {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.price .amt .dur {
+  display: flex;
+  flex-direction: column;
+}
+
+.price .amt .dur span:nth-child(1) {
+  font-weight: bold;
+}
+
+.price .offers {
+  padding-left: 8%;
+}
+
+.price .offers ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  margin: 8% 0;
+}
+
+.price .offers ul li i {
+  color: var(--green);
+}
+
+.price .offers ul li:nth-child(4) i,
+.price .offers ul li:nth-child(5) i {
+  color: #797777;
+}
+
+.price button {
+  border: none;
+  background-color: var(--blue);
+  color: #fff;
+  padding: 4% 3%;
+  margin: 10%;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.middle-card {
+  background-color: #252b42;
+  color: #fff;
+}
+
+.middle-card {
+  margin-top: 10%;
+}
+
+.middle-card .text {
+  color: #fff;
+}
+
+.middle-card .offers ul li:nth-child(4) i,
+.middle-card .offers ul li:nth-child(5) i {
+  color: var(--green);
+}
+
+/*contact design */
+.contact {
+  padding: 5% 15%;
+  background-color: #252b42;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact .text h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 3%;
+}
+
+.data .wrapper {
+  display: flex;
+}
+
+.data .wrapper input {
+  padding: 6% 8%;
+  border: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.data .wrapper button {
+  background-color: var(--blue);
+  color: #fff;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 5% 3%;
+}
+
+/* footer design */
+footer {
+  padding-top: 5%;
+}
+
+/* --> top area */
+.top-area {
+  display: flex;
+  margin-bottom: 5%;
+}
+
+/* -- left */
+.top-area .left {
+  width: 23%;
+}
+
+.top-area .left h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.top-area .left p {
+  color: #5c5c5c;
+  padding: 7% 0;
+}
+
+.top-area .left .so-links {
+  display: flex;
+  gap: 5%;
+  margin: 10% 0;
+}
+
+.top-area .left .so-links i {
+  color: var(--blue);
+}
+
+/* -- right */
+.right {
+  width: 77%;
+}
+
+.right .box-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.right .box-list .box {
+  width: 25%;
+}
+
+.right .box-list .box h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.right .box-list .box ul {
+  margin-top: 8%;
+}
+
+.right .box-list .box ul li {
+  list-style: none;
+  margin: 8% 0;
+  color: #5c5c5c;
+}
+
+/* --> bottom design */
+.bottom-area {
+  background-color: #f4f4f4;
+  padding: 1.8% 15%;
+  text-align: center;
+  font-weight: bold;
+  color: #5c5c5c;
+}
